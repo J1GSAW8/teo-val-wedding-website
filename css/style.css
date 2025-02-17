@@ -9768,3 +9768,9 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: small; /* Set a smaller font size for mobile */
   }
 }
+@media (max-width: 576px) {
+  .contact-text {
+    font-size: 11px; /* or whatever smaller size you prefer */
+    margin: 0 5px;   /* reduce spacing */
+  }
+}

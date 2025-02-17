@@ -94,29 +94,22 @@ var $grid = $('#portfolio-wrapper').isotope({
         smartSpeed: 1500,
         dots: false,
         loop: true,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+        nav: true,
+        navText: [
+          '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+          '<i class="fa fa-angle-right" aria-hidden="true"></i>'
         ],
         responsive: {
-            0:{
-                items:1
-            },
-            576:{
-                items:2
-            },
-            768:{
-                items:3
-            },
-            992:{
-                items:4
-            },
-            1200:{
-                items:5
-            }
+          0: { items: 1 },
+          576: { items: 2 },
+          768: { items: 3 },
+          992: { items: 4 },
+          1200: { items: 5 }
         }
-    });
+      });
+      
+      // Remove the data-lightbox attribute from cloned items so the lightbox only uses the original 27 items.
+      $('.gallery-carousel .owl-item.cloned a[data-lightbox="gallery"]').removeAttr('data-lightbox');
     
 })(jQuery);
 
